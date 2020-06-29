@@ -113,7 +113,20 @@ body{
     }
 
     .pagination li a.active,
+    .pagination li.current a,
     .pagination li a:hover{
       background-color: #4ba6c3;
       color: #fff;
     }
+
+
+
+
+.searchResults p {
+    margin: 10px 0 30px;
+    color: #4ba6c4;
+}
+
+
+
+
