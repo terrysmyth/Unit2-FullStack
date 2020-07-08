@@ -1,5 +1,6 @@
+const page = document.querySelector(".page");
 const ul = document.querySelector("ul.student-list");
-const ulPag = document.querySelector("ul.pagination");
+const ulPag = document.createElement("ul");
 const header = document.querySelector(".page-header");
 const searchResults = document.querySelector(".searchResults");
 let newList = [];
@@ -53,6 +54,8 @@ showPage(0, list);
 
 // CREATE LINKS
 function appendPageLinks(list) {
+    ulPag.className = "pagination";
+    page.appendChild(ulPag);
 
     ulPag.innerHTML = "";
     const paginationLength = Math.ceil(list.length / 10);
